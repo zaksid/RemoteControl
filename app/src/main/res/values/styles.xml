@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+    <style name="RemoteButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#00796B</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Remote Control</string>
+
+    <string name="delete">Delete</string>
+    <string name="enter">Enter</string>
+    <string name="zero">0</string>
+</resources>
