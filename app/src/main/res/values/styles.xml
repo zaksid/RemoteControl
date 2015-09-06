@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
 
     <style name="RemoteButton">
         <item name="android:layout_width">0dp</item>
@@ -9,6 +9,10 @@
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">40dp</item>
         <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="ControlButton" parent="RemoteButton">
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

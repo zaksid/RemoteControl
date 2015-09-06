@@ -1,5 +1,6 @@
 package com.bignerdranch.android.remotecontrol;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ public class RemoteControlFragment extends Fragment {
     private TextView selectedTextView;
     private TextView workingTextView;
 
+    @SuppressWarnings("deprecation")
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
@@ -59,6 +61,8 @@ public class RemoteControlFragment extends Fragment {
 
         Button deleteButton = (Button) tableRow.getChildAt(0);
         deleteButton.setText(R.string.delete);
+        deleteButton.setBackgroundColor(Color.parseColor("#004D40"));
+        deleteButton.setTextAppearance(getContext(), R.style.ControlButton);
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +76,8 @@ public class RemoteControlFragment extends Fragment {
 
         Button enterButton = (Button) tableRow.getChildAt(2);
         enterButton.setText(R.string.enter);
+        enterButton.setBackgroundColor(Color.parseColor("#004D40"));
+        enterButton.setTextAppearance(getContext(), R.style.ControlButton);
         enterButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 CharSequence working = workingTextView.getText();
